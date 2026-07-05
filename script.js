@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   hamburger?.addEventListener("click", () => {
     navMenu?.classList.toggle("active");
     hamburger.classList.toggle("active");
+    document.body.classList.toggle("menu-open", navMenu.classList.contains("active"));
   });
 
   // Close menu when link clicked
@@ -19,7 +20,16 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", () => {
       navMenu?.classList.remove("active");
       hamburger?.classList.remove("active");
+      document.body.classList.remove("menu-open");
     });
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      navMenu?.classList.remove("active");
+      hamburger?.classList.remove("active");
+      document.body.classList.remove("menu-open");
+    }
   });
 
   // Hamburger animation
