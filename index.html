@@ -1,223 +1,766 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
-
-    <script src="./script.js"></script>
-</body>
-</html><!doctype html>
-<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jane Doe | Portfolio</title>
+    <meta name="description" content="Sujata Yadav - Frontend Web Developer Portfolio. Building beautiful, responsive, and user-friendly websites." />
+    <meta name="theme-color" content="#0f172a" />
+    <title>Sujata Yadav | Frontend Developer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <!-- ================= HEADER ================= -->
+    <!-- =============== NAVIGATION =============== -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-logo">
+          <a href="#hero" class="logo-link">
+            <span class="logo-text">Sujata<span class="logo-accent">Yadav</span></span>
+          </a>
+        </div>
 
-    <header>
-      <div class="logo">
-        <h2>Jane<span>Doe</span></h2>
-      </div>
-
-      <nav>
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
         </ul>
-      </nav>
-    </header>
 
-    <!-- ================= HERO ================= -->
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
 
-    <section id="hero">
-      <div class="hero-content">
-        <p class="hero-tag">👋 Welcome To My Portfolio</p>
-        <h1>Hi, I'm <span>Jone Doe</span></h1>
-        <h2>Frontend Web Developer</h2>
-        <p class="hero-description">
-          I love building beautiful, responsive and user-friendly websites using
-          HTML and CSS. <br />
-          My goal is to create modern websites that provide the best experience
-          for every user.
-        </p>
-        <div class="hero-buttons">
-          <a href="#projects">
-            <button>View Projects</button>
-          </a>
-          <a href="#contact">
-            <button class="secondary-btn">Hire Me</button>
-          </a>
+    <!-- =============== HERO SECTION =============== -->
+    <section id="hero" class="hero">
+      <div class="hero-background">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="hero-tag">👋 Welcome to My Portfolio</p>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Sujata Yadav</span>
+          </h1>
+          <div class="typing-container">
+            <h2 class="hero-subtitle">
+              I'm a <span class="typing-text">Frontend Developer</span>
+            </h2>
+          </div>
+          <p class="hero-description">
+            I create beautiful, responsive, and user-friendly websites using modern web technologies. My passion is turning ideas into stunning digital experiences.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <span class="btn-icon">→</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get In Touch</span>
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" class="social-icon" title="GitHub">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3.405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.016 12.016 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon" title="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.05-8.736 0-9.646h3.554v1.348c.42-.649 1.17-1.574 2.848-1.574 2.079 0 3.637 1.357 3.637 4.27v5.602zM5.337 9.433c-1.144 0-1.915-.758-1.915-1.704 0-.948.77-1.704 1.96-1.704 1.188 0 1.915.756 1.938 1.704 0 .946-.75 1.704-1.983 1.704zm1.946 11.019H3.391V9.806h3.892v10.646zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="social-icon" title="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="image-wrapper">
+            <img
+              src="./img/Screenshot 2026-07-05 102132.png"
+              alt="Sujata Yadav - Frontend Developer"
+              class="profile-image"
+            />
+            <div class="image-glow"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll to explore</span>
+        <div class="mouse">
+          <div class="wheel"></div>
         </div>
       </div>
     </section>
 
-    <!-- ================= ABOUT ================= -->
-
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="about-container">
-        <div class="about-image">
-          <img
-            src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-user-profile-avatar-png-image_10211467.png"
-            alt="Profile"
-          />
+    <!-- =============== ABOUT SECTION =============== -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know me better</p>
         </div>
+
         <div class="about-content">
-          <h3>Passionate Frontend Developer</h3>
-          <p>
-            Hello! I'm Jane Doe, a student and aspiring web developer. I enjoy
-            creating clean and modern websites using HTML and CSS. Every project
-            helps me improve my creativity and coding skills.
-          </p>
-          <p>
-            My journey started with learning basic HTML, and now I'm designing
-            complete responsive websites with beautiful user interfaces.
-          </p>
-          <div class="about-info">
-            <div>
-              <strong>Name:</strong>
-              Jane Doe
+          <div class="about-image-wrapper">
+            <div class="about-image">
+              <img
+                src="./img/Screenshot 2026-07-05 102132.png"
+                alt="Sujata Yadav"
+              />
+              <div class="image-overlay"></div>
             </div>
-            <div>
-              <strong>Email:</strong>
-              jane@example.com
+          </div>
+
+          <div class="about-text">
+            <h3 class="about-subtitle">Passionate Frontend Developer</h3>
+            <p class="about-paragraph">
+              Hello! I'm Sujata Yadav, a dedicated frontend web developer with a passion for creating beautiful and functional websites. I specialize in building responsive, user-friendly digital experiences using modern web technologies.
+            </p>
+            <p class="about-paragraph">
+              My journey into web development started with curiosity about how websites work. Now, I'm committed to mastering frontend technologies and delivering pixel-perfect, performance-optimized websites that users love.
+            </p>
+
+            <div class="about-info-grid">
+              <div class="info-card">
+                <span class="info-label">Email</span>
+                <p class="info-value">Sujataydv32@gmail.com</p>
+              </div>
+              <div class="info-card">
+                <span class="info-label">Location</span>
+                <p class="info-value">New York, USA</p>
+              </div>
+              <div class="info-card">
+                <span class="info-label">Experience</span>
+                <p class="info-value">1+ Years</p>
+              </div>
+              <div class="info-card">
+                <span class="info-label">Education</span>
+                <p class="info-value">Web Development</p>
+              </div>
             </div>
-            <div>
-              <strong>Location:</strong>
-              New York, USA
-            </div>
-            <div>
-              <strong>Experience:</strong>
-              1+ Years
+
+            <div class="about-buttons">
+              <a href="#" class="btn btn-primary" download>
+                <span>Download CV</span>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span>Let's Talk</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= SKILLS ================= -->
-
-    <section id="skills">
-      <h2>My Skills</h2>
-
-      <div class="skills-container">
-        <div class="skill-card">
-          <h3>HTML</h3>
-          <div class="progress">
-            <div class="html"></div>
-          </div>
+    <!-- =============== SKILLS SECTION =============== -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My Skills</h2>
+          <p class="section-subtitle">Technologies I work with</p>
         </div>
 
-        <div class="skill-card">
-          <h3>CSS</h3>
-          <div class="progress">
-            <div class="css"></div>
+        <div class="skills-grid">
+          <div class="skill-card" data-skill="HTML">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3 3h18v18H3V3zm4 15l2.5-3.5H6v-2h4v2h-3.5L9 18H7zm8-8l-1 2h2l-1 2h3l-2 3h-2l3-4h-3l1-2h-2l1-2h2l-1-1h-1l1 2zm-4-4h10v2H7V6z"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">HTML</h3>
+            <div class="skill-progress">
+              <div class="progress-ring">
+                <svg viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                  <circle cx="50" cy="50" r="45" class="progress-fill" style="--percentage: 90"></circle>
+                </svg>
+                <span class="progress-text">90%</span>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="skill-card">
-          <h3>JavaScript</h3>
-          <div class="progress">
-            <div class="js"></div>
+          <div class="skill-card" data-skill="CSS">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3 3h18v18H3V3zm4 15l2-2.5H6v-2h4v2h-3.5L9 18H7zm8-8l-1 2h2l-1 2h3l-2 3h-2l3-4h-3l1-2h-2l1-2h2l-1-1h-1l1 2zm-4-4h10v2H7V6z"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">CSS</h3>
+            <div class="skill-progress">
+              <div class="progress-ring">
+                <svg viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                  <circle cx="50" cy="50" r="45" class="progress-fill" style="--percentage: 85"></circle>
+                </svg>
+                <span class="progress-text">85%</span>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="skill-card">
-          <h3>Responsive Design</h3>
-          <div class="progress">
-            <div class="responsive"></div>
+          <div class="skill-card" data-skill="JavaScript">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3 3h18v18H3V3zm10 14.5c2.25 0 3.5-1.07 3.5-2.75 0-1.45-.65-2.25-2.3-2.65l-1.1-.25c-.75-.15-1.1-.55-1.1-1.05 0-.65.55-1.1 1.4-1.1.85 0 1.5.3 1.65.9h1.75c-.15-1.45-1.25-2.35-3.4-2.35-2.05 0-3.4.95-3.4 2.5 0 1.35.65 2.15 2.15 2.5l1.1.25c.85.2 1.25.65 1.25 1.2 0 .75-.7 1.2-1.75 1.2-1.15 0-1.8-.5-2-1.1H7c.15 1.6 1.4 2.5 3.5 2.5zm-8-10v6h1.7V7.5h-1.7z"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <div class="skill-progress">
+              <div class="progress-ring">
+                <svg viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                  <circle cx="50" cy="50" r="45" class="progress-fill" style="--percentage: 75"></circle>
+                </svg>
+                <span class="progress-text">75%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-skill="Responsive Design">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-7-2l-4-5h3V7h2v4h3l-4 5z"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">Responsive Design</h3>
+            <div class="skill-progress">
+              <div class="progress-ring">
+                <svg viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                  <circle cx="50" cy="50" r="45" class="progress-fill" style="--percentage: 88"></circle>
+                </svg>
+                <span class="progress-text">88%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-skill="Git">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M21.16 4.61A6.524 6.524 0 0 0 12 2a6.52 6.52 0 0 0-9.16 2.61A6.524 6.524 0 0 0 2 12a6.52 6.52 0 0 0 2.61 9.16A6.524 6.524 0 0 0 12 22a6.52 6.52 0 0 0 9.16-2.61A6.524 6.524 0 0 0 22 12a6.52 6.52 0 0 0-2.61-9.16zm-2.06 2.06A4.5 4.5 0 0 1 20 12a4.5 4.5 0 0 1-1.3 3.16l-7.16-7.16A4.5 4.5 0 0 1 15.7 4.3zm-7.16 7.16l7.16 7.16A4.5 4.5 0 0 1 12 20a4.5 4.5 0 0 1-3.16-1.3l7.16-7.16zm-3.84 0A4.5 4.5 0 0 1 12 4a4.5 4.5 0 0 1 3.16 1.3L8.3 12.46z"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">Git</h3>
+            <div class="skill-progress">
+              <div class="progress-ring">
+                <svg viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                  <circle cx="50" cy="50" r="45" class="progress-fill" style="--percentage: 80"></circle>
+                </svg>
+                <span class="progress-text">80%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-skill="Bootstrap">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm-2 18h-2V8h2v10zm4-10c-1.1 0-2 .9-2 2v8h-2V8h2v1c.55-.85 1.55-1 2.25-1 2.2 0 4 1.8 4 4v6h-2v-6c0-1.1-.9-2-2-2z"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">Bootstrap</h3>
+            <div class="skill-progress">
+              <div class="progress-ring">
+                <svg viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="45" class="progress-bg"></circle>
+                  <circle cx="50" cy="50" r="45" class="progress-fill" style="--percentage: 82"></circle>
+                </svg>
+                <span class="progress-text">82%</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= SERVICES ================= -->
-
-    <section id="services">
-      <h2>My Services</h2>
-      <div class="service-container">
-        <div class="service-box">
-          <h3>🌐 Website Design</h3>
-          <p>Designing beautiful and modern responsive websites.</p>
-        </div>
-        <div class="service-box">
-          <h3>💻 Frontend Development</h3>
-          <p>Creating responsive websites using HTML and CSS.</p>
-        </div>
-        <div class="service-box">
-          <h3>🎨 UI Design</h3>
-          <p>Attractive layouts focused on user experience.</p>
+    <!-- =============== SERVICES SECTION =============== -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My Services</h2>
+          <p class="section-subtitle">What I can help you with</p>
         </div>
 
-        <div class="service-box">
-          <h3>📱 Mobile Responsive</h3>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🌐</div>
+            <h3 class="service-title">Website Design</h3>
+            <p class="service-description">
+              Designing beautiful, modern, and responsive websites that captivate your audience and convert visitors into customers.
+            </p>
+          </div>
 
-          <p>Websites that work perfectly on every device.</p>
+          <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3 class="service-title">Frontend Development</h3>
+            <p class="service-description">
+              Creating robust and performant websites using HTML5, CSS3, and JavaScript with a focus on best practices and clean code.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3 class="service-title">UI/UX Design</h3>
+            <p class="service-description">
+              Designing attractive and intuitive layouts with a focus on user experience, accessibility, and modern design principles.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">📱</div>
+            <h3 class="service-title">Mobile Responsive</h3>
+            <p class="service-description">
+              Ensuring your website works perfectly on all devices and screen sizes with a mobile-first approach to development.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">⚡</div>
+            <h3 class="service-title">Performance Optimization</h3>
+            <p class="service-description">
+              Optimizing websites for speed, performance, and SEO to ensure the best user experience and better search rankings.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🔧</div>
+            <h3 class="service-title">Website Maintenance</h3>
+            <p class="service-description">
+              Providing ongoing support, updates, and maintenance to keep your website secure, fast, and running smoothly.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= CONTACT ================= -->
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <div class="contact-container">
-        <div class="contact-info">
-          <h3>Let's Work Together</h3>
-          <p>Email : jane@example.com</p>
-          <p>Phone : +1 234 567 890</p>
-          <p>Location : New York, USA</p>
+    <!-- =============== PROJECTS SECTION =============== -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Showcasing my best work</p>
         </div>
-        <form
-          id="contactForm"
-          action="https://formsubmit.co/sujataydv32@gmail.com"
-          method="POST"
-        >
-          <input type="text" name="name" placeholder="Full Name" required />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-          />
-          <input type="text" name="subject" placeholder="Subject" required />
-          <textarea
-            name="message"
-            placeholder="Write Your Message"
-            required
-          ></textarea>
-          <input type="hidden" name="_captcha" value="false" />
-          <input
-            type="hidden"
-            name="_subject"
-            value="New Portfolio Contact Message"
-          />
-          <p id="formStatus" style="margin: 0; color: #2563eb"></p>
-          <button type="submit">Send Message</button>
-        </form>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop"
+                alt="E-commerce Platform"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a href="#" class="project-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-commerce Platform</h3>
+              <p class="project-description">
+                A fully responsive e-commerce website with product catalog, shopping cart, and checkout functionality.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-adf4e565db42?w=500&h=300&fit=crop"
+                alt="Digital Agency"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a href="#" class="project-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Digital Agency Website</h3>
+              <p class="project-description">
+                Modern agency portfolio website featuring smooth animations, service showcase, and client testimonials.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=500&h=300&fit=crop"
+                alt="Task Management App"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a href="#" class="project-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Task Management App</h3>
+              <p class="project-description">
+                Interactive task management application with drag-and-drop functionality and local storage persistence.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=500&h=300&fit=crop"
+                alt="Restaurant Website"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a href="#" class="project-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Restaurant Website</h3>
+              <p class="project-description">
+                Beautiful restaurant website with menu showcase, reservation system, and customer testimonials section.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1517694712692-2f6c8a8e7c7d?w=500&h=300&fit=crop"
+                alt="Portfolio Template"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a href="#" class="project-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Developer Portfolio</h3>
+              <p class="project-description">
+                Clean and minimal portfolio template for developers with dark mode, projects showcase, and contact form.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop"
+                alt="Blog Platform"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a href="#" class="project-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Blog Platform</h3>
+              <p class="project-description">
+                Dynamic blog platform with article listings, search functionality, and user-friendly content management.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- ================= FOOTER ================= -->
+    <!-- =============== CONTACT SECTION =============== -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's work together and create something amazing</p>
+        </div>
 
-    <footer>
-      <h2>Jane<span>Doe</span></h2>
-      <p>Building beautiful websites with creativity and passion.</p>
-      <p>© 2026 Jane Doe. All Rights Reserved.</p>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-icon">📧</div>
+              <h3>Email</h3>
+              <p>Sujataydv32@gmail.com</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">📱</div>
+              <h3>Phone</h3>
+              <p>+1 234 567 890</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <h3>Location</h3>
+              <p>New York, USA</p>
+            </div>
+
+            <div class="social-links-large">
+              <a href="https://github.com" target="_blank" class="social-link">
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="social-link">
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://facebook.com" target="_blank" class="social-link">
+                <span>Facebook</span>
+              </a>
+            </div>
+          </div>
+
+          <form id="contactForm" class="contact-form" action="https://formsubmit.co/Sujataydv32@gmail.com" method="POST">
+            <div class="form-group">
+              <div class="form-input-wrapper">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                  class="form-input"
+                />
+                <span class="form-icon">👤</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="form-input-wrapper">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                  class="form-input"
+                />
+                <span class="form-icon">✉️</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="form-input-wrapper">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                  class="form-input"
+                />
+                <span class="form-icon">📝</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="form-input-wrapper">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                  class="form-input"
+                ></textarea>
+              </div>
+            </div>
+
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_subject" value="New Portfolio Contact Message" />
+
+            <p id="formStatus" class="form-status"></p>
+            <button type="submit" class="btn btn-primary btn-submit">
+              <span>Send Message</span>
+              <span class="btn-icon">→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== FOOTER =============== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 class="footer-logo">
+              Sujata<span class="logo-accent">Yadav</span>
+            </h3>
+            <p>Building beautiful websites with creativity and passion.</p>
+            <div class="footer-socials">
+              <a href="https://github.com" target="_blank" class="footer-social">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3.405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.016 12.016 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="footer-social">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.05-8.736 0-9.646h3.554v1.348c.42-.649 1.17-1.574 2.848-1.574 2.079 0 3.637 1.357 3.637 4.27v5.602zM5.337 9.433c-1.144 0-1.915-.758-1.915-1.704 0-.948.77-1.704 1.96-1.704 1.188 0 1.915.756 1.938 1.704 0 .946-.75 1.704-1.983 1.704zm1.946 11.019H3.391V9.806h3.892v10.646zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                </svg>
+              </a>
+              <a href="https://facebook.com" target="_blank" class="footer-social">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="#services">Website Design</a></li>
+              <li><a href="#services">Frontend Dev</a></li>
+              <li><a href="#services">UI/UX Design</a></li>
+              <li><a href="#services">Responsive Web</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Sujata Yadav. All Rights Reserved.</p>
+          <a href="#hero" class="back-to-top">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
   </body>
-</html>
+</html> 
